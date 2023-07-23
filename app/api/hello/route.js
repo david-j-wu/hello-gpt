@@ -1,5 +1,7 @@
+export const dynamic = "force-dynamic";
+
 // Logic for the `/api/hello` endpoint
-export default async function handler(req, res) {
+export async function GET() {
   try {
     // Sending a request to the OpenAI create chat completion endpoint
 
@@ -67,7 +69,10 @@ Total: ${usage.total_tokens}
 `);
 
     // Sending a successful response for our endpoint
-    res.status(200).json({ completion: completionText });
+    return new Response(JSON.stringify({ completion: completionText }), {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+    });
   } catch (error) {
     // Error handling
 
@@ -78,8 +83,12 @@ Error: ${JSON.stringify(error.body)}
 `);
 
     // Sending an unsuccessful response for our endpoint
-    res
-      .status(error.statusCode || "500")
-      .json({ error: { message: "An error has occurred" } });
+    return new Response(
+      JSON.stringify({ error: { message: "An error has occurred" } }),
+      {
+        status: error.statusCode || "500",
+        headers: { "Content-Type": "application/json" },
+      }
+    );
   }
 }
