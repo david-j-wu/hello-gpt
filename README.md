@@ -1,28 +1,20 @@
-# Hello, GPT!: A simple web app built with the OpenAI API, Next.js and Tailwind CSS
+# Lingua
 
-This is the source code for the Hello, GPT! web app built with OpenAI's ChatGPT API, Next.js and Tailwind CSS covered in Fullstack GPT ([https://www.fullstack-gpt.com/](https://www.fullstack-gpt.com/)).
+Lingua is an interactive web app built with the OpenAI API, Next.js and Tailwind CSS and supported by GPT-4 on the backend. It provides a Personalized Learning Path Recommender based on the Unit the student selects for an introductory linguistics course.
 
-The terminal commands below are for Mac and other Linux-based systems. Your mileage may vary if you are using Windows or another operating system.
-
-This project uses the MIT License. See `LICENSE.md` for more information.
-
-## Live demo
-
-You can try the version hosted on [Vercel](https://vercel.com/) (the awesome cloud computing company founded by the creators of Next.js) here:
-
-[https://bonjour-gpt.vercel.app/](https://bonjour-gpt.vercel.app/)
+The terminal setup commands below are for Mac and other Linux-based systems.
 
 ## Pre-requisites
 
-This project requires Node.js 16.8.0 or higher.
+This requires Node.js 16.8.0 or higher.
 
 For information on how to download, install and update Node.js, see their official website: [https://nodejs.org/](https://nodejs.org/).
 
 You can run the terminal commands `node -v` and `npm -v` to check what versions you have installed of Node.js and the associated package manager NPM.
 
-## How to launch the web app locally
+## Launching the web app locally
 
-1. Change the present working directory to the `hello-gpt` folder. If you're using Visual Studio Code ([https://code.visualstudio.com/](https://code.visualstudio.com/)), then create a new window and open the folder. Alternatively, you can use the `cd` terminal command to do this. You can run the command `pwd` to check you have done this correctly.
+1. Change the present working directory to the `lingua` folder. If you're using Visual Studio Code ([https://code.visualstudio.com/](https://code.visualstudio.com/)), then create a new window and open the folder. Alternatively, you can use the `cd` terminal command to do this. You can run the command `pwd` to check you have done this correctly.
 
 2. Install the dependencies for the web app:
 
@@ -49,8 +41,6 @@ npm run dev
 ```
 
 6. Open your browser of choice and head to [http://localhost:3000](http://localhost:3000) to see the web app live locally.
-
-7. Make desired changes to the web app. Next.js will automatically update the web app when you save changes to the source code.
 
 ## Acknowledgements and thanks
 
