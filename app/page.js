@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {
   const [selectedTopics, setSelectedTopics] = useState([]);
@@ -42,19 +43,23 @@ export default function Home() {
   };
 
   return (
-    <div className="container">
-      <h1>Choose Linguistics Topics for Personalized Learning Path</h1>
-      <div>
+    <div className="container mt-5">
+      <h1 className="mb-4">Choose Linguistics Topics for Personalized Learning Path</h1>
+      <div className="d-flex flex-wrap mb-3">
         {topics.map(topic => (
-          <button key={topic} onClick={() => toggleTopic(topic)} className={selectedTopics.includes(topic) ? 'selected' : ''}>
+          <button
+            key={topic}
+            onClick={() => toggleTopic(topic)}
+            className={`btn ${selectedTopics.includes(topic) ? 'btn-success' : 'btn-outline-secondary'} m-2`}
+          >
             {topic}
           </button>
         ))}
       </div>
-      <button onClick={sendRequest}>Get Learning Path</button>
+      <button className="btn btn-primary" onClick={sendRequest}>Get Learning Path</button>
 
-      {isLoading && <p>Loading...</p>}
-      {response && <p>{response}</p>}
+      {isLoading && <div className="mt-3"><p className="text-info">Loading...</p></div>}
+      {response && <div className="mt-3 alert alert-info">{response}</div>}
     </div>
   );
 }
