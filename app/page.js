@@ -8,6 +8,7 @@ export default function Home() {
   const [selectedTopics, setSelectedTopics] = useState([]);
   const [response, setResponse] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [activeCircle, setActiveCircle] = useState(null);
 
   const topics = [
     'Phonetics', 'Phonology', 'Morphology', 'Syntax', 'Semantics', 'Pragmatics', 'Sociolinguistics'
@@ -55,11 +56,23 @@ export default function Home() {
   const renderTopicsInCircles = (output) => {
     const topics = output.split(/\d+\./).filter(Boolean);
     return topics.map((topic, index) => (
-      <div key={index} className="circle-topic">
+      <div
+        key={index}
+        className={`circle-topic ${activeCircle === index ? 'active' : ''}`}
+        onClick={() => handleCircleClick(index)}
+      >
         <h5>Topic {index + 1}</h5>
         <p>{topic.trim()}</p>
       </div>
     ));
+  };  
+
+  const handleCircleClick = (index) => {
+    setActiveCircle(index); // Set the index of the clicked circle as active
+  };
+
+  const handleCloseActiveCircle = () => {
+    setActiveCircle(null); // Reset the active circle
   };  
 
   return (
@@ -82,11 +95,13 @@ export default function Home() {
       {response && (
         <div className="mt-3">
           <div className="alert alert-info">Your Personalized Learning Path:</div>
-          <div className="topics-container">
-            {renderTopicsInCircles(response)}
+          <div className={`overlay ${activeCircle !== null ? 'active' : ''}`} onClick={handleCloseActiveCircle}></div>
+          <div className="topics-container d-flex flex-wrap justify-content-center">
+            {response && renderTopicsInCircles(response)}
           </div>
         </div>
       )}
+      <div className={`overlay ${activeCircle !== null ? 'active' : ''}`} onClick={() => setActiveCircle(null)}></div>
     </div>
   );
 }
