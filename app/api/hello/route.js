@@ -1,9 +1,12 @@
+import lectures from '../../data/lectures.json';
+
 export async function POST(request) {
   try {
     const { topics } = await request.json();
 
     // Constructing a prompt for ChatGPT
-    const promptText = `Create a personalized learning path for an introductory linguistics course covering these topics: ${topics.join(', ')}.`;
+    let promptText = topics.map(topic => lectures[topic]).join('\n\n');
+    promptText += '\n\nBased on the above content, create a personalized learning path for an introductory linguistics course.';
 
     // OpenAI API request setup
     const createChatCompletionEndpointURL = "https://api.openai.com/v1/chat/completions";
