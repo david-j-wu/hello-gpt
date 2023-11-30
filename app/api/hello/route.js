@@ -1,94 +1,52 @@
-export const dynamic = "force-dynamic";
-
-// Logic for the `/api/hello` endpoint
-export async function GET() {
+export async function POST(request) {
   try {
-    // Sending a request to the OpenAI create chat completion endpoint
+    const { promptType } = await request.json();
+    let promptText;
 
-    // Setting parameters for our request
-    const createChatCompletionEndpointURL =
-      "https://api.openai.com/v1/chat/completions";
-    const promptText = `Write five variations of "Hello, World!"
+    switch (promptType) {
+      case 'promptOne':
+        promptText = 'Your text for prompt 1';
+        break;
+      case 'promptTwo':
+        promptText = 'Your text for prompt 2';
+        break;
+      case 'promptThree':
+        promptText = 'Your text for prompt 3';
+        break;
+      default:
+        promptText = 'Default prompt text';
+    }
 
-Start each variation on a new line. Do not include additional information.
-    
-Here is an example:
-
-Hello, World!
-Bonjour, Earth!
-Hey, Universe!
-Hola, Galaxy!
-G'day, World!`;
+    const createChatCompletionEndpointURL = "https://api.openai.com/v1/chat/completions";
     const createChatCompletionReqParams = {
       model: "gpt-3.5-turbo",
       messages: [{ role: "user", content: promptText }],
     };
 
-    // Sending our request using the Fetch API
-    const createChatCompletionRes = await fetch(
-      createChatCompletionEndpointURL,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: "Bearer " + process.env.OPENAI_API_KEY,
-        },
-        body: JSON.stringify(createChatCompletionReqParams),
-      }
-    );
+    const response = await fetch(createChatCompletionEndpointURL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${process.env.OPENAI_API_KEY}`
+      },
+      body: JSON.stringify(createChatCompletionReqParams),
+    });
 
-    // Processing the response body
-    const createChatCompletionResBody =
-      await createChatCompletionRes.json();
+    const responseBody = await response.json();
 
-    // Error handling for the OpenAI endpoint
-    if (createChatCompletionRes.status !== 200) {
-      let error = new Error(
-        "Create chat completion request was unsuccessful."
-      );
-      error.statusCode = createChatCompletionRes.status;
-      error.body = createChatCompletionResBody;
-      throw error;
+    if (!response.ok) {
+      throw new Error(`OpenAI API Error: ${response.status}`);
     }
 
-    // Properties on the response body
-    const completionText =
-      createChatCompletionResBody.choices[0].message.content.trim();
-    const usage = createChatCompletionResBody.usage;
-
-    // Logging the results
-    console.log(`Create chat completion request was successful. Results:
-Completion: 
-
-${completionText}
-
-Token usage:
-Prompt: ${usage.prompt_tokens}
-Completion: ${usage.completion_tokens}
-Total: ${usage.total_tokens}
-`);
-
-    // Sending a successful response for our endpoint
-    return new Response(JSON.stringify({ completion: completionText }), {
+    return new Response(JSON.stringify({ completion: responseBody.choices[0].message.content.trim() }), {
       status: 200,
       headers: { "Content-Type": "application/json" },
     });
+
   } catch (error) {
-    // Error handling
-
-    // Server-side error logging
-    console.log(`Thrown error: ${error.message}
-Status code: ${error.statusCode}
-Error: ${JSON.stringify(error.body)}
-`);
-
-    // Sending an unsuccessful response for our endpoint
-    return new Response(
-      JSON.stringify({ error: { message: "An error has occurred" } }),
-      {
-        status: error.statusCode || "500",
-        headers: { "Content-Type": "application/json" },
-      }
-    );
+    return new Response(JSON.stringify({ error: { message: error.message || "An error occurred" } }), {
+      status: 500,
+      headers: { "Content-Type": "application/json" },
+    });
   }
 }
