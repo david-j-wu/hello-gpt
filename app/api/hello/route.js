@@ -1,12 +1,26 @@
-import lectures from '../../data/lectures.json';
+import { promises as fs } from 'fs';
+import path from 'path';
 
 export async function POST(request) {
   try {
     const { topics } = await request.json();
+    const dataDir = path.join(process.cwd(), 'app', 'data');
+    
+    // Read all selected topic files
+    const topicContents = await Promise.all(
+      topics.map(async (topic) => {
+        const filePath = path.join(dataDir, `${topic.toLowerCase()}.txt`);
+        try {
+          return await fs.readFile(filePath, 'utf8');
+        } catch (error) {
+          console.error(`Error reading file: ${filePath}`, error);
+          return ''; // Return empty string if file not found or error reading
+        }
+      })
+    );
 
-    // Constructing a prompt for ChatGPT
-    let promptText = topics.map(topic => lectures[topic]).join('\n\n');
-    promptText += '\n\nBased on the above content, create a personalized learning path for an introductory linguistics course.';
+    const combinedContents = topicContents.join('\n\n');
+    const promptText = `Based on the following contents, create a personalized learning path:\n\n${combinedContents}`;
 
     // OpenAI API request setup
     const createChatCompletionEndpointURL = "https://api.openai.com/v1/chat/completions";

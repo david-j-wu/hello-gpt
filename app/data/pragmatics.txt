@@ -1,0 +1,37 @@
+Overview
+An exploration of pragmatics, focusing on the application of Grice's Maxims and other pragmatic concepts in language.
+Main Topics Covered
+1. Grice's Maxims
+Review of Grice's Maxims: Quality, Quantity, Relevance, and Manner.
+Discussion on how these maxims guide cooperative conversation.
+2. Violating vs. Flouting Maxims
+Distinction between violating (being uncooperative) and flouting (intentionally violating for specific meanings) maxims.
+Examples illustrating the comedic and conversational effects of flouting maxims.
+3. Presupposition
+Concept of presuppositions: implicit assumptions in discourse.
+Differences between presuppositions and entailments, especially in negation contexts.
+4. Conversational Implicature
+Understanding conversational implicature: suggestions not explicitly expressed or entailed.
+Analysis of how implicatures depend on cooperative principles and context.
+5. Speech Acts and Performative Speech
+Introduction to speech acts: sentences that accomplish actions by being uttered.
+Characteristics of speech acts, including their dependence on context and social roles.
+6. Deixis
+Exploration of deictic expressions: words whose meanings depend on conversational context.
+Examples of deictic words including pronouns, temporal expressions, and locatives.
+Key Concepts
+Maxim Violation and Flouting: Understanding the implications of not adhering to conversational norms.
+Presupposition vs. Entailment: Differentiating between implicit assumptions and logical conclusions in language.
+Implicature: Recognizing implied meanings in conversation and their significance.
+Speech Acts: Identifying sentences that perform actions and their dependence on societal structures.
+Deixis: Understanding how context affects the meaning of certain words and phrases.
+Practical Applications
+Gaining insights into the nuances of conversation and the unspoken rules guiding it.
+Developing skills to analyze and understand the implicit meanings and intentions behind spoken language.
+Additional Discussions
+Maxim Violation in Action: Real-world examples and exercises to identify maxim violations.
+Weaponized Presuppositions: Examination of how presuppositions can be used in manipulative or misleading ways.
+Context Dependence in Pragmatics: Emphasis on how context plays a crucial role in interpreting meaning.
+Concluding Remarks
+A comprehensive overview of pragmatics, highlighting its importance in understanding language beyond the literal meanings of words.
+Teaser for the next lecture on language change.

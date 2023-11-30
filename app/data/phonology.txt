@@ -1,0 +1,125 @@
+How does speech work?
+The Speech Process
+Speech involves creating vibrations in the air through vocal mechanisms.
+Phonetics is the study of this process.
+Speech Production Organs
+The Lungs: Provide the air needed for speech.
+Articulators ("flapping bits of meat"): These articulate to produce distinct speech sounds.
+Phonetics and Anatomical Terms
+You will not be responsible for any anatomical terms not required for transcription on exams.
+The Tongue
+Plays a crucial role in shaping speech sounds.
+Speech Complexity
+Speech consists of fluid, overlapping gestures.
+It is more complex than we typically perceive.
+Understanding Speech Through Phonetics
+Speech is broken into 'segments' or 'phones'.
+Transcription allows us to represent what is said phonetically.
+Writing System Limitations
+English writing system does not accurately represent speech sounds.
+The International Phonetic Alphabet (IPA)
+A system for transcribing speech sounds.
+Focuses on describing individual phones.
+Can transcribe speech in any human language or dialect.
+Using IPA
+Involves writing down the sequence of sounds being produced, not the written words.
+Example: "Black Lives Matter" transcribed as /blæk lajvz mæɾəɹ/ in a particular dialect.
+IPA Chart
+A comprehensive chart representing all phonetic sounds.
+Useful for understanding and transcribing speech in various languages.
+Online IPA Resources
+Some recommended online resources for IPA learning and typing tools.
+Describing Speech Sounds
+Describing Consonants
+Consonants are described by:
+Place of Articulation: Where is the sound made?
+Manner of Articulation: What action is being performed at that place?
+Voicing: Is the larynx buzzing or not?
+Places of Articulation
+Examples include Bilabial, Labiodental, Interdental, Alveolar, Postalveolar, Velar, and Glottal.
+Manner of Articulation
+Types include Stops, Taps, Fricatives, Nasals, Approximants, and Laterals.
+Voicing in Consonants
+Differentiates between voiced and voiceless sounds.
+Describing Vowels
+Vowels are described based on tongue position (height and front-back) and lip rounding.
+Examples include /i, ɪ, ɛ, æ, ə, ʌ, ɑ, ɔ, ʊ, u/.
+English Vowel Sounds
+English has multiple vowel sounds, often not accurately represented in writing.
+Distinguishes between monophthongs and diphthongs.
+IPA for Consonants and Vowels
+Charts and tools to understand the IPA representation of English consonants and vowels.
+Conclusion
+Speech is intricate and complex.
+The IPA provides a reliable method to transcribe and understand speech sounds.
+
+Advanced Speech Sound Identification
+Identifying proper IPA symbols for specific speech sounds.
+Transcribing speech using the IPA.
+Utilizing Online Audio IPA Charts
+Recommended resources for IPA learning and transcription practice.
+Practical Exercises in IPA Transcription
+Transcription exercises to practice identifying places and manners of articulation in speech sounds.
+Transcription Pitfalls and Writing System Fallacies
+Common misconceptions and errors in transcribing English speech sounds.
+Distinction between voiced and voiceless sounds in different words.
+The importance of not capitalizing in IPA transcriptions.
+Understanding silent letters and ambiguous writing in English.
+Advanced Transcription Practice
+Exercises for distinguishing and transcribing complex speech sounds.
+The use of the tie bar for affricates in transcription.
+The Significance of Learning IPA
+The IPA's role in overcoming the limitations of the English writing system.
+Applications of IPA in capturing speech variations, dialect differences, and unwritable sounds.
+Examples of Phonetic Transcription
+Transcribing varied speech samples, including non-English languages and unique vocal sounds.
+Speech Perception Challenges
+Discussion on the complexity of speech perception and understanding.
+Interactive activities showcasing the intricacies of speech perception.
+Tricks and Demonstrations in Speech Perception
+Various exercises demonstrating speech perception phenomena like gradient perception and coda recovery.
+Exploration of multi-modal perception and tone languages.
+The Universality of Speech Production and Perception
+Discussion on the universal nature of speech organs and the ability to produce any language.
+The challenges and nuances of producing and understanding different speech sounds.
+Speech Perception as a Complex Cognitive Process
+Understanding the incredible capabilities of human speech production and perception.
+Appreciation of the complexities involved in producing and understanding speech.
+Final Thoughts on Language and Speech
+The marvel of human language abilities.
+Encouragement for further study in linguistics and speech science.
+Signed Language Phonology
+Phonological Parameters in Signed Languages
+Handshape, Orientation, Movement, Location, and Expression as phonological elements.
+Application of assimilation, dissimilation, epenthesis, and deletion in signed languages.
+Feature-based rule writing and the concept of minimal pairs in signed languages.
+Demonstrations of minimal pairs in American Sign Language (ASL).
+Syllables in Phonology
+The Role of Syllables
+The importance of syllables in languages like English.
+Breaking down syllables into onset, nucleus, and coda.
+Syllable structure and its phonological significance.
+Syllable-based phonological rules in various languages.
+Phonotactics
+Understanding Phonotactics
+The study of permissible sound combinations and structures in languages.
+The concept of Phonemic Inventory and its role in language analysis.
+Examining different phonotactic constraints in languages.
+Examples of English phonotactic constraints.
+Phonotactic adaptations in word borrowings between languages.
+Language Borrowing and Adaptation
+Examination of how languages like Hawaiian and Japanese adapt English words phonotactically.
+Case studies and examples of phonotactic adaptations in borrowed words.
+Syllable Complexity Across Languages
+Comparison of syllable structures in languages like English, Russian, Czech, and others.
+Phonological Analysis and Exercises
+Exercises and discussions on syllable-based phonological analysis.
+Practical examples and exercises on aspiration in English and its phonological implications.
+Exploring natural classes in phonology through examples.
+Language Background and Its Implications
+Exploring Language Background
+Differentiating between L1 (native) and L2 (acquired) languages.
+The concept of heritage speakers and their fluency levels.
+Rethinking the definition of a 'native speaker.'
+A broader approach to understanding an individual's language background.
+The complexity and diversity of language backgrounds.
