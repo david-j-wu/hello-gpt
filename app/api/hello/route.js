@@ -1,22 +1,11 @@
 export async function POST(request) {
   try {
-    const { promptType } = await request.json();
-    let promptText;
+    const { topics } = await request.json();
 
-    switch (promptType) {
-      case 'promptOne':
-        promptText = 'Your text for prompt 1';
-        break;
-      case 'promptTwo':
-        promptText = 'Your text for prompt 2';
-        break;
-      case 'promptThree':
-        promptText = 'Your text for prompt 3';
-        break;
-      default:
-        promptText = 'Default prompt text';
-    }
+    // Constructing a prompt for ChatGPT
+    const promptText = `Create a personalized learning path for an introductory linguistics course covering these topics: ${topics.join(', ')}.`;
 
+    // OpenAI API request setup
     const createChatCompletionEndpointURL = "https://api.openai.com/v1/chat/completions";
     const createChatCompletionReqParams = {
       model: "gpt-3.5-turbo",
@@ -38,7 +27,7 @@ export async function POST(request) {
       throw new Error(`OpenAI API Error: ${response.status}`);
     }
 
-    return new Response(JSON.stringify({ completion: responseBody.choices[0].message.content.trim() }), {
+    return new Response(JSON.stringify({ recommendation: responseBody.choices[0].message.content.trim() }), {
       status: 200,
       headers: { "Content-Type": "application/json" },
     });
