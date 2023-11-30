@@ -4,10 +4,10 @@ import { Roboto_Flex } from "next/font/google";
 const robotoFlex = Roboto_Flex({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Hello, GPT!",
+  title: "Lingua",
   description:
-    '"Hello, GPT!": A simple ChatGPT-powered app' +
-    " built with Next.js and Tailwind CSS",
+    '"Lingua": A GPT-powered learning path generator' +
+    " built for UCSD's LIGN 101",
 };
 
 export default function RootLayout({ children }) {

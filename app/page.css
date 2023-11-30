@@ -1,0 +1,23 @@
+.circle-topic {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 50%; /* Makes it circular */
+    background-color: #007bff; /* Example background color */
+    color: white;
+    text-align: center;
+    width: 250px; /* Adjust size as needed */
+    height: 250px; /* Adjust size as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle-topic h5 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .circle-topic p {
+    font-size: 0.9em;
+  }  

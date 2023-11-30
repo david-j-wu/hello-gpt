@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './page.css';
 
 export default function Home() {
   const [selectedTopics, setSelectedTopics] = useState([]);
@@ -42,9 +43,28 @@ export default function Home() {
     }
   };
 
+  const parseOutput = (output) => {
+    // Split by numeric points followed by periods (e.g., "1.", "2.", etc.)
+    const topics = output.split(/\d+\./).filter(Boolean);
+    return topics.map((topic, index) => ({
+      id: index + 1,
+      content: topic.trim()
+    }));
+  };  
+
+  const renderTopicsInCircles = (output) => {
+    const topics = output.split(/\d+\./).filter(Boolean);
+    return topics.map((topic, index) => (
+      <div key={index} className="circle-topic">
+        <h5>Topic {index + 1}</h5>
+        <p>{topic.trim()}</p>
+      </div>
+    ));
+  };  
+
   return (
     <div className="container mt-5">
-      <h1 className="mb-4">Choose Linguistics Topics for Personalized Learning Path</h1>
+      <h1 className="mb-4">Hi [name], what would you like to learn today?</h1>
       <div className="d-flex flex-wrap mb-3">
         {topics.map(topic => (
           <button
@@ -57,9 +77,16 @@ export default function Home() {
         ))}
       </div>
       <button className="btn btn-primary" onClick={sendRequest}>Get Learning Path</button>
-
+  
       {isLoading && <div className="mt-3"><p className="text-info">Loading...</p></div>}
-      {response && <div className="mt-3 alert alert-info">{response}</div>}
+      {response && (
+        <div className="mt-3">
+          <div className="alert alert-info">Your Personalized Learning Path:</div>
+          <div className="topics-container">
+            {renderTopicsInCircles(response)}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
