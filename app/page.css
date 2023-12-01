@@ -1,0 +1,57 @@
+.circle-topic {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 50%; /* Makes it circular */
+    background-color: #007bff; /* Example background color */
+    color: white;
+    text-align: center;
+    width: 250px; /* Adjust size as needed */
+    height: 250px; /* Adjust size as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px;
+    height: 250px; /* Adjust as needed */
+  }
+  
+  .circle-topic h5 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .circle-topic p {
+    font-size: 0.9em;
+  }
+
+  .circle-topic {
+    /* existing styles */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for enlarging */
+    cursor: pointer; /* Indicate that the circle is clickable */
+  }
+  
+  .circle-topic.active {
+    position: fixed; /* Take the circle out of the normal flow and position it */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2); /* Center and enlarge the circle */
+    z-index: 10; /* Ensure the circle is above other elements */
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 5; /* Below the active circle, above everything else */
+    display: none; /* Hidden by default */
+  }
+  
+  .overlay.active {
+    display: block; /* Show the overlay when active */
+  }
+  
+  
