@@ -1,0 +1,70 @@
+Overview
+An introduction to phonetics, focusing on the mechanics of speech production, transcription, and the classification of consonants and vowels.
+Main Topics Covered
+1. Introduction to Speech Production
+Exploration of how speech works, including the roles of lungs, vocal tract, and articulators.
+Explanation of the speech process as vibrations in the air interpreted by the ear.
+2. The International Phonetic Alphabet (IPA)
+Introduction to the IPA as a tool for transcribing speech sounds accurately, regardless of the language.
+Emphasis on using IPA to transcribe what is said, not what is written.
+3. Describing Consonants
+Three key aspects for describing consonants: Place of Articulation, Manner of Articulation, and Voicing.
+Detailed explanation of each aspect, including examples and related exercises.
+4. Describing Vowels
+Description of vowels in terms of tongue height (high, mid, low), tongue position (front, central, back), and lip rounding.
+Introduction to diphthongs and their distinction from monophthongs.
+5. Consonants and Vowels in Mainstream US English
+Overview of the variety of consonants and vowels present in mainstream US English.
+Discussion on the number of vowels in English and common misconceptions due to the writing system.
+Key Concepts
+Speech Mechanics: The physiological process of producing speech sounds.
+IPA: A standardized system for phonetic transcription.
+Consonants: Classified by place, manner, and voicing.
+Vowels: Classified by tongue height, position, and lip rounding.
+Diphthongs: Vowels where the tongue moves through the mouth during articulation.
+Practical Applications
+Using IPA to transcribe speech accurately for linguistic analysis.
+Understanding the complexity and diversity of sounds in human languages.
+Recognizing the limitations and inaccuracies of traditional writing systems in representing speech sounds.
+Additional Discussions
+The Unreliability of Writing Systems: Highlighting the discrepancies between written and spoken language.
+Variations in English Pronunciation: Differences in vowel and consonant sounds across English dialects.
+Speech Experiments: Engaging students in practical exercises to understand speech production.
+Concluding Remarks
+Emphasizing the importance of phonetics in understanding human language.
+Encouraging students to think critically about the sounds of language beyond the written form.
+Overview
+A continuation of Phonetics I, this session delves deeper into the International Phonetic Alphabet (IPA), explores speech perception, and highlights the incredible complexity and capability of human speech.
+Main Topics Covered
+1. Advanced IPA Transcription
+Further practice in identifying and using IPA symbols to transcribe speech.
+Emphasis on recognizing different articulatory characteristics in spoken words.
+2. Transcription Challenges and Pitfalls
+Exploration of common transcription errors and how to avoid them.
+Discussion on the limitations and deceiving aspects of the English writing system.
+3. Speech Perception and Its Complexities
+Introduction to speech perception, focusing on how humans interpret and understand spoken language.
+Presentation of various auditory illusions and perception experiments.
+4. Special Topics in Phonetics
+Discussion on tone languages and the use of pitch in language.
+Exploration of clicks in African languages, debunking misconceptions.
+Examination of how coarticulation affects speech perception.
+Key Concepts
+IPA Proficiency: Enhancing skills in phonetic transcription using the IPA.
+Speech Perception: Understanding how humans decode and interpret spoken language.
+Coarticulation: The influence of surrounding sounds on the pronunciation of a phoneme.
+Tone and Click Languages: Special phonetic features in specific language families.
+Phonetic Variability: Emphasizing the uniqueness of each individual's speech.
+Practical Applications
+Applying advanced IPA transcription skills to various languages.
+Appreciating the complexity of human speech perception and production.
+Understanding the role of pitch and tone in language.
+Special Focus
+Misconceptions about Language: Addressing and correcting common misunderstandings about non-English languages, particularly African languages with click consonants.
+Auditory Illusions and Experiments: Engaging in perception tasks to demonstrate the complexities of speech perception.
+Additional Discussions
+Speech Production and Perception: Insights into how spoken language is produced and perceived, highlighting human linguistic capabilities.
+IPA in Practice: Using the IPA to transcribe diverse and challenging speech samples.
+Linguistic Diversity: Celebrating the wide range of phonetic elements found in languages worldwide.
+Concluding Remarks
+Emphasizing the incredible ability of humans to produce and understand complex speech.

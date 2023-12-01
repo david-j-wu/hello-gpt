@@ -9,7 +9,7 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
 
   const topics = [
-    'Phonetics', 'Phonology', 'Morphology', 'Syntax', 'Semantics', 'Pragmatics', 'Sociolinguistics'
+    'Introduction to Language', 'Phonetics', 'Phonology', 'Morphology', 'Syntax', 'Semantics', 'Pragmatics', 'Language Families'
   ];
 
   const toggleTopic = (topic) => {
