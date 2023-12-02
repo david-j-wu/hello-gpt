@@ -1,377 +1,46 @@
-What is Linguistics?
-Linguistics study Language, interested in how “Language” works for humans
-And we study it by looking at Spanish, or Laotian, or Russian, or Kumeyaay
-Learning languages can be a part of that, but it’s not the whole
-We’re interested in Capital L Language even as we’re studying individual languages
-
-Language is complex
-“The duck quacked gleefully at his bae”
-How did I make that sequence of sounds and how did you recognize it?
-Why is there a [t] at the end of quack rather than a [d]?
-What does that last sound mean anyways?
-Who quacked at whom? When? How do we know?
-What was gleeful?
-What’s a “bae” anyways? Can a duck have a bae?
-
-Why does anybody care about Linguistics?
-Theoretical Linguistics
-How can we describe how people communicate?
-How can we describe the things people don’t do?
-What are the best models to help us understand language?
-What are the best models which mirror our own cognition?
-How does language change over time?
-Linguistic Typology
-How do languages generally accomplish communicative goals?
-Are there patterns across the world?
-What kinds of things are languages more and less likely to do?
-Are there universal tendencies in language?
-Experimental work in Linguistics
-Pneumotachography (Airflow measurement)
-Electromagnetic Articulography (EMA)
-Neurolinguistics
-EEG, fMRI, MEG (cognitive science?)
-Other fun Linguistic Enterprises
-Language Documentation
-Computational Linguistics
-
-Computational Linguistics Tasks
-Automatic summarization
-Information extraction and question-answering
-Ad targeting
-Sentiment Analysis
-Pattern recognition
-Keyword / Concept Mention Detection
-
-Forensic Linguistics
-Emergency call Analysis
-Authorship attribution - Social Media, did someone actually write this post? Ransom demands - who this person is (area they are from, language they speak), Suicide letters (is this someone who would actually write these words)
-Voice identification, “Voiceprint ID”, The Bin Laden Tapes
-
-Conlanging, Creating new languages for fun
-Examples are Dothraki, High Valyrian, Na'vi, Languages from Dune
-
-Lexicography
-Where a word came from, its origins, what it means for different people and communities
-
-Consonants (non-pulmonic)
-
-Not all languages use the same modality
-Spoken languages use speech to express meanings
-We’re familiar with this, but even spoken language involves gesture and visual cues
-
-Written language is used to express meanings
-Like this!
-Not all languages have writing systems, some different languages use the same writing system, some people can only understand each other in writing
-
-Signed language use gesture, facial expression, and movement to express meanings
-
-Other languages are felt
-Braille is touch-based writing system for English
-ProTactile is an emerging language designed to be used by folks who are both Deaf and Blind
-
-Languages have unique terms and structures to discuss the world
-
-Linguists study all language, not just “proper” language
-New language has studyable meaning too
-“Rizz”, “sus”
-This shows we have intuitions about all language use
-We can talk about any words, even new word,s being grammatical or not
-We know when any language that we use is being used properly
-Words have legitimate and correct meanings, even if they’re not in the dictionary
-The -ussy suffix (ug bussy, pizzussy) was the American Dialect Society’s 2022 “Word of the Ear”
-
-Language
-A system of linking expression to meaning
-
-What characteristics does a language have?
-Arbitrary relationships between signs and the signified
-Fully Productive and Creative
-Speakers have knowledge of grammar and the 'rules' of language
-
-Language has “signs” and “signified” concepts
-The sign is something a human does in communication
-The 'signified' is something in the world (conceptual or concrete)
-What is the link between these?
-
-Non-arbitrary signs
-The sign is causally linked to the signified
-Smoke is a sign of fire
-Bleeding from your finger is a sign of a papercut
-
-Iconic (or representational) signs
-A referential abstraction from the signified
-Hand gestures, sounds meant to “mimic” the world
-
-Arbitrary signs
-Referential only by agreement and widespread knowledge
-Non-representational symbols or uses of symbols
-
-The most important arbitrary signifiers are words
-The connection between words and meanings in language is (mostly) arbitrary
-The connection between sound and meaning is mostly arbitrary in spoken Language
-Signed languages have arbitrary signs too, but there are often elements of iconicity in signs
-
-Spoken language has moments of iconicity too
-Onomatopoeia
-Differs across language
-The best evidence for arbitrariness: Words differ across languages
-If the link between signifier and signified were non-arbitrary, everybody would have substantially similar words for concepts, but we do not
-Characteristic 1
-Arbitrary relationships between signs and the signified
-Characteristic 2
-Languages are fully productive and creative
-Characteristic 3
-Speakers have knowledge of grammar and the 'rules' of language
-
-Languages are capable of describing anything (eventually)
-Might take time, might require some words to be "circumlocutory" or invented, might require incredible skill
-
-Languages are also capable of producing an infinite set of unique sentences
-Any human speaker of a language can produce a sentence that nobody has ever spoken before
-And sentences can be infinitely grown and expanded
-This particular property is called recursion: Sentences can be made to contain elements from other sentences infinitely
-
-Creativity and Productivity is true of all languages
-We have yet to discover a language which is communicatively 'primitive' or unable to describe reality
-If a language lacks elements, they will be developed or borrowed over time
-Languages can differ substantially still
-A given language may lack words for some concepts
-Or may have words that other languages don't have
-Many words and concepts are culturally based, and may not be shared regardless
-Every natural human language that we've found is able to express a rich set of meanings
-
-You can make grammaticality judgements
-Grammaticality judgements are about language, not individual words
-
-We as speakers have strong feelings about the 'correctness' and 'rules' of language
-But not so much for other kinds of basic communicative gestures
-
-There are other characteristics that are important in human Language
-Language is symmetrical (we can send and receive)
-Language can talk about situations not in the “here and now”
-Language is made of discrete, isolatable units (like words or sounds)
-Language has slang, taboo words
-Language accomplishes certain functions (ex asking questions, issuing commands)
-
-Three important characteristics of Language
-1 - Arbitrary relationships between signs and the signified
-2 - Fully Productive and Creative
-3 - Speakers have knowledge of grammar and the 'rules' of language
-All human languages share these properties
-
-Given that human languages seem to share some properties, and we're yet to find a group of humans without language, Some theorists have argued that this is evidence for Universal Grammar
-An idea initially posited by Noam Chomsky
-UG holds that there’s some genetic basis to human language
-Some properties of human language are innate: Not just the ones to do with physical structures
-There are a set of constraints governing language that are 'built in' to our physiology
-
-UG is not facts about your individual language
-A child of two Mandarin Chinese speakers, raised by English speakers, will speak English
-Every language is not the same, and linguistic grammar varies substantially
-UG is about biological predispositions to language, not to A language
-
-Evidence for UG
-No cultures, people, or societies have been found with no language
-No other species has been found with human-like language
-Children acquire language impressively well
-Even in cultures where people don’t speak to children
-Sign languages show similar properties to spoken languages
-Even when they arise in isolation
-Some things appear to be universal
-The big one is Recursion
-
-Evidence against UG
-There doesn’t seem to be good biological evidence for it
-Many properties of human language can be derived from functional facts about communication
-Recursion might not be universal
-Dan Everett (and others) claim that speakers of Piraha lack recursion
-Even Chomksy doesn’t support this view anymore
-
-Are elements of Linguistic structure innate?
-There was a major change between the 9th (2010) and 11th (2018) editions of the textbook
-Innatist arguments have gone from “unquestioned” to “questionable” in the field
-Lots of smart folks have lined up on both sides of this argument
-And there’s no sign of census yet
-
-What isn’t Language?
-Alternative means of coding languages
-Semaphore and Morse Code, these are just re-coding an existing language
-Writing systems - They're closely associated with an existing spoken or signed human language
-Are programming languages languages?
-Arbitrary relationships between signs and the signified (yes), fully productive and creative (no), speakers have knowledge of grammar and the “rules” of language (yes)
-So it is not
-
-Do any non-humans have language?
-Yes, but only one so far: Large Language Models can product human language
-They have “passed the bar” for many linguists as competent language users
-Most of the historical problems language models faced are now “solved”, this is different than saying “These are true AI”
-They are much less efficient language learners children
-Work is ongoing to see whether they can do more with less
-
-Aside: ChatGPT has no plausible “universal grammar”
-The code doesn’t include grammatical facts, a “language organ”, or innate grammatical patterns
-
-What about living creatures? Lots of animals communicate
-Mating calls, alert calls, territorial displays
-
-Nim Chimpsky
-A chimpanzee raised in a human family to learn ASL by Herbert Terrace
-Learned maybe fewer than 125 signs, combined signs to produce 2-4 word utterances
-Did not seem to have full-on language
-Never got past 2-4 sign utterances, only 7% of utterances served to advance the conversation
-39% of utterances were repetitions of what had just been signed
-Entirely "pragmatic" use of language, Terrace argued that Nim never learned anything
-
-But is it language?
-We’ve only seen one domain of language
-There's no sign of non-pragmatic language use
-
-Do non-human animals have Language?
-Nobody's truly doing human language yet
-There's evidence of complex information being encoded, but we need more evidence before it's "language"
-
-We think in language, regularly
-So does the language we speak determine how we think? Sapir-Whorf Hypothesis
-Also known as “linguistic relativity”, “the language you speak influences how you think about the world”
-Fascinating and terrifying
-
-There are many possible forms
-No effect: “The language we speak has zero effect on our thought or cognition”
-Weak: “The language we speak has some effect on our thought and cognition”
-Strong: “The language we speak guides our thought and cognition”
-Determinism: “The language we speak determines our thought and cognition”
-There is some effect, but it's not deterministic. Debate is now focused on the size and nature of the effect
-
-There can be many different variations of a language
-Ex all are english, but are different: British English, African English, Australian English, . . 
-Even American English can be broken down to The West, Upper Midwest, Southern, . . 
-American Regional Dialect Tests
-Syntax: “The gate needs fixed”, “I might could have some lunch”
-These are regional characteristics
-Pronunciation: “Pin” vs “Pen” (southern english), “Mary, marry, merry” (homogenized, usually pronounced the same)
-Regional Vocabulary Differences
-Dragonfly: Can also be called Mosquito hawk
-Fizzy sweet beverage: pop / soda / soda-pop / coke / cooldrink
-Not everyone from a region will have all of the dialect features
-This is as much a function of attitude as location
-Rootedness plays a major role
-There are many more regions and regional features we haven’t covered
-
-Sociolects
-A sociolect is a dialect shared among members of a certain social group
-People can have influence from more than one sociolect at once
-We can often switch sociolects when in different social situations
-Using a sociolect is a way of showing affiliation with a certain identity
-Some sociolects have prestige, others don’t
-. . and which dialect is prestigious varies by context
-The bread and butter of sociolinguists
-
-People can switch among their dialects and sociolects
-California: Different groups, all overlap: Rural speakers, San Diegans, etc . .
-
-Idiolect
-You use language in a certain way, that way is your “idiolect”
-Your esoteric pronunciations
-The expressions and catch phrases that you use and prefer
-The specific meanings that given words or phrases have to you
-The features which you’ve inherited from you region(s) or social group(s)
-
-More Idiolect features
-Odd spellings or emojis you use (LOL vs lol, “Thanx”
-Your individual set of speech organs (which may change the way your speech sounds)
-
-Language is fractal
-You see larger patterns at first
-Then you look closer and find more patterns and structure, and find more patterns and structure, and . .
-
-It’s very hard to find clear lines
-It can be hard to define what is a single language
-The distinction between language and dialect is often political
-If you like them, they speak a dialect of your language, otherwise, whole different language
-Everybody speaks at least one dialect, sociolect, and idiolect
-
-We try to discuss variation in terms of languages, dialects, sociolects, and idiolects
-Dialects are a particular form of language used by a certain social or geographical group of people
-A sociolect is a particular social group’s specific dialect
-Your idiolect is your unique way of using language and speaking
-Your speech and language is a variable from situation to situation, from word to word
-As you look closer and close at language, you find more patterns and complexity, not less
-
-Linguists are interested in how everybody talks
-Not just one prestigious or “correct” variety
-Not just the academic or mainstream dialects
-Not just what does in textbooks or dictionaries
-
-We don’t tend to believe in a “correct variety” of a language
-It’s hard to pin down which one would be correct
-“Which region / dialect / sociolect / idiolect is right?”
-The situationally “correct” or “appropriate” variety is about social context
-“That variety is bad here” does not mean “that variety is bda”
-“Correct” is a social judgment, not a linguistic one
-
-So we think about “grammar” differently than your English professor
-
-Perspective and Descriptive Grammar
-The grammatical rules of the language, dialect, and sociolect being spoken which describe how (a group of) people actually talk or write
-
-“The boy flame take watchingsly” is descriptively ungrammatical
-“Grammatical” sentences are in harmony with the local rules
-People “stumble” over ungrammatical sentences
-When something is descriptively ungrammatical, it’s often hard to understand
-Although not all hard-to-understand sentences are ungrammatical
-
-Symbol Usage Note
-Linguists mark ungrammatical sentences with a star, questionable ones with a ?
-“The boy flame take watchingsly / ?Which friends has Thomas painted a picture of them?”
-
-Dialects and Sociolects and Idiolects each have their own descriptive grammar
-. . and they follow it
-
-AAVE (African American Vernacular English, “Ebonics”)
-Negative Concord, can’t nobody say he don’t work
-*Nobody can say he doesn’t work
-Habitual be
-He be drivin all over the place
-*He often drives all over the place lately
-Copula deletion
-She mean
-*She’s mean
-These grammatical rules are followed carefully by speakers of AAVE
-
-It is patently false to claim that AAVE (or Chicano English, Souther English, etc) speakers “have no grammar”
-
-Prescriptive Grammar
-Made up or social rules that prescribe how people should talk or write
-
-The “rules” being violated
-I never know what I should write with
-Never end a sentence with a preposition
-I don’t know who she photographed
-“Whom” should be used for a direct object
-We hope to stunningly advance machine learning technology
-How dare you split an infinitive, you ingrate
-
-Prescriptive grammar rules are social rules
-They are not universally observed
-They do not generally affect your ability to be understood
-They’re often based in written ambiguity (eg there, they’re, their)
-They’re often quoted from one particular source (Strunk and White)
-They’re often associated with a specific setting or institution
-
-What other prescriptive grammar rules are you familiar with?
-Let’s work on that distinction a bit more
-
-Linguists are interested in descriptive grammar
-We don’t believe there is a correct variety
-A rule which a large number of people don’t follow isn’t a real rule
-Or it’s not a rule in all dialects
-And if you speak a non-standard variety, we think that’s great
-
-It’s fun to see when prescriptive corrections are made
-Sometimes, people truly believe the rules are real
-Often, they’re trying to help
-If you want to be taken seriously in [context], you’ll need to talk like this
-Sometimes, they’re trying to show superiority
-You bring an argument before me yet you cannot master even basic grammatical structure! Fool!
-
-Attacking people’s language is often used as a covert way of attacking people
+**Linguistics Overview**
+- **Definition and Scope**: Linguistics is the study of language, focusing on how language functions in human communication. It encompasses the examination of specific languages like Spanish, Laotian, Russian, and Kumeyaay.
+- **Complexity of Language**: Explores nuances in language, such as phonetic variations, meanings of words, and grammatical constructs. Example question: Why is there a [t] sound in "quacked" instead of a [d]?
+
+**Branches of Linguistics**
+- **Theoretical Linguistics**: Concerns with describing communication methods, exploring language models, and understanding language evolution.
+- **Linguistic Typology**: Investigates common patterns across languages, universal tendencies, and language capabilities.
+- **Experimental Linguistics**: Includes techniques like Pneumotachography, Electromagnetic Articulography, and Neurolinguistics.
+- **Other Areas**: Language Documentation, Computational Linguistics, Forensic Linguistics, Conlanging (e.g., Dothraki, Na'vi), and Lexicography.
+
+**Computational Linguistics Applications**
+- Tasks include Automatic Summarization, Information Extraction, Ad Targeting, Sentiment Analysis, Pattern Recognition, and more.
+
+**Forensic Linguistics Applications**
+- Analyzing emergency calls, authorship attribution, voice identification, etc.
+
+**Language Modalities**
+- Spoken languages with speech and gesture.
+- Written languages, some sharing the same writing systems.
+- Signed languages using gestures and facial expressions.
+- Tactile languages like Braille and ProTactile.
+
+**Linguistic Studies**
+- Focus on all language forms, including "non-standard" or newly coined terms (e.g., "Rizz", "sus").
+- Exploration of grammar, rules, and evolving language uses.
+
+**Characteristics of Language**
+- Arbitrary sign and signified relationships.
+- Full productivity and creativity, allowing for infinite unique sentences and descriptions.
+- Knowledge of grammar and rules by speakers.
+
+**Universal Grammar and Linguistic Structure**
+- Universal Grammar posits innate language properties.
+- Debates exist regarding the biological basis for language.
+
+**Language Variation**
+- Dialects, sociolects, and idiolects reflect geographical, social, and individual language differences.
+- Examples of regional dialect variations in syntax and pronunciation.
+
+**Language and Thought**
+- Sapir-Whorf Hypothesis examines how language influences thought.
+- Various degrees of linguistic relativity are debated.
+
+**Linguistic Prescriptivism vs. Descriptivism**
+- Prescriptive Grammar focuses on socially dictated "correct" language use.
+- Descriptive Grammar describes how people actually use language, embracing all dialects and forms.

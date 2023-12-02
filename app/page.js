@@ -9,6 +9,7 @@ export default function Home() {
   const [response, setResponse] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [activeCircle, setActiveCircle] = useState(null);
+  const [modalContent, setModalContent] = useState(null);
 
   const topics = [
     'Introduction to Language', 'Phonetics', 'Phonology', 'Morphology', 'Syntax', 'Semantics', 'Pragmatics', 'Language Families'
@@ -44,36 +45,28 @@ export default function Home() {
     }
   };
 
-  const parseOutput = (output) => {
-    // Split by numeric points followed by periods (e.g., "1.", "2.", etc.)
-    const topics = output.split(/\d+\./).filter(Boolean);
-    return topics.map((topic, index) => ({
-      id: index + 1,
-      content: topic.trim()
-    }));
-  };  
-
   const renderTopicsInCircles = (output) => {
     const topics = output.split(/\d+\./).filter(Boolean);
     return topics.map((topic, index) => (
       <div
         key={index}
-        className={`circle-topic ${activeCircle === index ? 'active' : ''}`}
-        onClick={() => handleCircleClick(index)}
+        className="circle-topic"
+        onClick={() => handleCircleClick(topic, index)}
       >
         <h5>Topic {index + 1}</h5>
-        <p>{topic.trim()}</p>
       </div>
     ));
-  };  
+  };
 
-  const handleCircleClick = (index) => {
+  const handleCircleClick = (topicContent, index) => {
+    setModalContent({ index, content: topicContent });
     setActiveCircle(index); // Set the index of the clicked circle as active
   };
 
-  const handleCloseActiveCircle = () => {
-    setActiveCircle(null); // Reset the active circle
-  };  
+  const closeModal = () => {
+    setActiveCircle(null);
+    setModalContent(null);
+  };
 
   return (
     <div className="container mt-5">
@@ -95,13 +88,24 @@ export default function Home() {
       {response && (
         <div className="mt-3">
           <div className="alert alert-info">Your Personalized Learning Path:</div>
-          <div className={`overlay ${activeCircle !== null ? 'active' : ''}`} onClick={handleCloseActiveCircle}></div>
+          <div className={`overlay ${activeCircle !== null ? 'active' : ''}`} onClick={closeModal}></div>
           <div className="topics-container d-flex flex-wrap justify-content-center">
             {response && renderTopicsInCircles(response)}
           </div>
         </div>
       )}
-      <div className={`overlay ${activeCircle !== null ? 'active' : ''}`} onClick={() => setActiveCircle(null)}></div>
+
+      {modalContent && (
+        <div className={`modal-container ${activeCircle !== null ? 'active' : ''}`}>
+          <div className="modal-content">
+            <h5>Topic {modalContent.index + 1}</h5>
+            <p>{modalContent.content}</p>
+            <button className="btn btn-secondary" onClick={closeModal}>Close</button>
+          </div>
+        </div>
+      )}
+
+      <div className={`overlay ${activeCircle !== null ? 'active' : ''}`} onClick={closeModal}></div>
     </div>
   );
 }
