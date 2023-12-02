@@ -20,7 +20,12 @@ export async function POST(request) {
     );
 
     const combinedContents = topicContents.join('\n\n');
-    const promptText = `Based on the following contents, create a personalized learning path:\n\n${combinedContents}`;
+    const promptText = `Based on the following contents, create a personalized learning path. 
+    This means that for each step, provide a summary of the content, then suggest what to do to
+    review it.
+    Segment it so that each new step is denoted by the word "StepMarker":
+    
+    \n\n${combinedContents}`;
 
     // OpenAI API request setup
     const createChatCompletionEndpointURL = "https://api.openai.com/v1/chat/completions";

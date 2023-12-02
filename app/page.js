@@ -46,12 +46,14 @@ export default function Home() {
   };
 
   const renderTopicsInCircles = (output) => {
-    const topics = output.split(/\d+\./).filter(Boolean);
+    // Split the output based on "StepMarker" and filter out empty strings
+    const topics = output.split(/StepMarker/).filter(Boolean);
+  
     return topics.map((topic, index) => (
       <div
         key={index}
         className="circle-topic"
-        onClick={() => handleCircleClick(topic, index)}
+        onClick={() => handleCircleClick(topic.trim(), index)}
       >
         <h5>Topic {index + 1}</h5>
       </div>
