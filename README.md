@@ -22,19 +22,22 @@ You can run the terminal commands `node -v` and `npm -v` to check what versions 
 npm install
 ```
 
-3. Create a copy of the sample environment variables files, `.env.sample`, either manually or by running the following command:
+3. Install Bootstrap
+``` npm install bootstrap ```
+
+4. Create a copy of the sample environment variables files, `.env.sample`, either manually or by running the following command:
 
 ```
 cp .env.sample .env.local
 ```
 
-4. Add your OpenAI API key to the environment variables file `.env.local`:
+5. Add your OpenAI API key to the environment variables file `.env.local`:
 
 ```
 OPENAI_API_KEY=my-openai-api-key-1
 ```
 
-5. Run the local development server:
+6. Run the local development server:
 
 ```
 npm run dev
