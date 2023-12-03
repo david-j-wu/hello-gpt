@@ -47,11 +47,12 @@ export default function Home() {
     setSelectedTopics(prev => 
       prev.includes(topic) ? prev.filter(t => t !== topic) : [...prev, topic]
     );
+    setApiCallCount(1);
   };
 
   const sendRequest = async () => {
     setIsLoading(true);
-    setApiCallCount(count => count + 1);
+    setApiCallCount(apiCallCount => apiCallCount + 1);
     try {
       const response = await fetch('/api/hello', {
         method: 'POST',
@@ -80,7 +81,7 @@ export default function Home() {
 
   const handleChatSubmit = async () => {
     setIsLoading(true);
-    setApiCallCount(count => count + 1);
+    setApiCallCount(apiCallCount => apiCallCount + 1);
     try {
       // Send both the selected topic and the user's input to the backend
       const response = await fetch('/api/hello', {

@@ -18,7 +18,8 @@ export async function POST(request) {
         }
       })
     );
-
+    
+    const combinedContents = topicContents.join('\n\n');
     let promptText;
 
     if (apiCallCount === 1) {
