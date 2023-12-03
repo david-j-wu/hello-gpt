@@ -32,3 +32,16 @@ Political and Social Aspects of Language Classification: The role of societal fa
 Concluding Remarks
 Emphasizing that the distinction between languages and dialects is often political rather than purely linguistic.
 Highlighting the complexity of tracing language ancestry and the existence of languages without known relatives.
+
+Questions to answer
+How do we know that two languages are related to one another?
+Are all languages related to another language?
+How can we reconstruct earlier versions of a language?
+Terms to define
+Mutual Intelligibility
+Dialect Continuum
+Language family
+Linguistic Isolate
+Language Reconstruction
+Indo-European
+Cognates

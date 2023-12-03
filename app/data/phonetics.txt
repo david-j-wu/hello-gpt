@@ -68,3 +68,49 @@ IPA in Practice: Using the IPA to transcribe diverse and challenging speech samp
 Linguistic Diversity: Celebrating the wide range of phonetic elements found in languages worldwide.
 Concluding Remarks
 Emphasizing the incredible ability of humans to produce and understand complex speech.
+
+Questions to understand
+What is phonetics?
+What is the IPA?
+Why would we use or need the IPA?
+What is the role of the lungs during speech?
+What is the role of the tongue during speech?
+What does raising and lowering the velum do during speech?
+What makes consonants different from vowels?
+Is the English writing system similar to spoken English?
+In terms of what properties are consonants described by linguists?
+In terms of what properties are vowels described by linguists?
+What is voicing? Where does it come from?
+What is the difference between a monophthong and a diphthong?
+Do the majority of African languages use click sounds?
+What is the difference between Schwa (ə) and Wedge (ʌ)? Between /ɜ˞/ and /ə˞/? (see this post for more details)
+Do people from different regions or races have genetic and anatomical differences which prevent or allow them to make certain speech sounds?
+
+Terms to define
+Phone
+Place of articulation
+Bilabial
+Labiodental
+Interdental
+Alveolar
+Postalveolar
+Velar
+Glottal
+Manner of articulation
+Stop/Plosive
+Tap
+Fricative
+Affricate
+Nasal
+Approximant
+Lateral
+Voicing
+Voiced
+Voiceless
+Vowel Properties
+High vs. Mid vs. Low
+Back vs. Front
+Rounded vs. Unrounded
+Monophthong
+Diphthong
+Speech Perception

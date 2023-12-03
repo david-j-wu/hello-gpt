@@ -20,10 +20,12 @@ export async function POST(request) {
     );
 
     const combinedContents = topicContents.join('\n\n');
-    const promptText = `Based on the following contents, create a personalized learning path. 
-    This means that for each step, provide a summary of the content, then suggest what to do to
-    review it.
-    Segment it so that each new step is denoted by the word "StepMarker":
+    const promptText = `Do the following four steps:
+    Step 1) Write me a summary of the following content
+    Step 2) Create vocabulary-matching activity with four words and their definitions
+    Step 3) Create a review quiz with four questions, starting with "Here is a review quiz of the content"
+    Step 4) Provide a brief answer key to the vocabulary and review quiz. Don't give any notes
+    Segment each step with the word "StepMarker", and use the following content as reference:
     
     \n\n${combinedContents}`;
 

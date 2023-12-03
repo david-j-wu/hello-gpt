@@ -35,3 +35,31 @@ Context Dependence in Pragmatics: Emphasis on how context plays a crucial role i
 Concluding Remarks
 A comprehensive overview of pragmatics, highlighting its importance in understanding language beyond the literal meanings of words.
 Teaser for the next lecture on language change.
+
+Questions to answer
+What’s the difference between Semantics and Pragmatics?
+What is the cooperative principle of language?
+What’s the difference between semantic entailment and pragmatic implicature?
+What are the four Gricean maxims, and what do they do in conversation?
+Quality, Quantity, Manner, Relevance
+What’s the difference between flouting a maxim and violating it?
+What are some situations in which we might flout a Gricean maxim?
+Give an example of a conversational implicature
+Give an example of a presupposition
+How are entailment, implicature, and presupposition different from each other?
+What’s the difference between a conventional sentence and a performative one?
+What’s the difference between a deictic word and a non-deictic word?
+Terms to define
+Cooperative Principle
+Gricean maxims of…
+Quality
+Quantity
+Manner
+Relevance
+To ‘flout’ a maxim
+To violate a maxim
+Presupposition
+Speech act (or performative sentence)
+Conversational Implicature
+“Drawing” an implicature
+Deixis

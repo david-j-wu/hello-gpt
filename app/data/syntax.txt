@@ -49,3 +49,25 @@ Concluding Remarks
 Emphasizes the importance of phrase structure rules in understanding sentence construction.
 Highlights the complexity and hierarchical nature of language through the use of syntax trees.
 Encourages further practice and exploration in tree construction for deeper understanding.
+
+Questions to Answer
+What is constituency and why is it important in syntax?
+How do you test for constituency?
+Be able to use all three tests we discussed in class (Substitution, Standalone Answers, Moving items)
+Why do we represent sentences with hierarchy (e.g. trees) rather than as flat strings?
+How is recursion implemented and visible in phrase structure rules?
+Give a sentence which is a good argument for including N’ alongside NP and N in our phrase structure schema, and explain why? (hint: the little cute tiny black stray cat)
+How can we distinguish different ‘readings’ of a structurally ambiguous sentence from the tree alone (e.g. “I saw the [Queen of England’s] Hat” vs. “I saw the Queen [of England’s Hat]”)?
+Be able to match a sentence to a pre-constructed tree, using your phrase structure rules.
+Be able to identify an incorrectly diagrammed sentence using your phrase structure rules.
+Terms to Define
+Grammatical Relations
+Syntactic Hierarchy
+Noun Phrase, Verb Phrase, Prepositional Phrase
+Constituency
+Constituency Testing
+Phrase Structure Rules
+Garden Path Sentence
+Recursion
+Complimentizer
+Syntactic Ambiguity

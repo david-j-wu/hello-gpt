@@ -103,3 +103,33 @@ Understanding Signed Language Phonology: Recognizing minimal pairs and phonologi
 Analyzing Syllables: Practicing the breakdown of syllables in various words.
 Exploring Phonotactics: Analyzing how different languages allow or restrict certain sound combinations.
 Language Background in Linguistics: Considering the complexities of defining language fluency and background.
+
+Questions to answer
+What is phonology?
+How does phonology differ from phonetics?
+How do you determine if two sounds are in a complementary or contrastive distibution?
+How do you determine if two sounds are two phonemes or two allophones of the same phone?
+How do you determine the environment that triggers an alternation?
+What is a minimal pair and how do you find one?
+What does a phonological rule describe?
+What kind of thing can be shared between sounds in a natural class?
+Explain the difference between a phonological rule and a phonotactic constraint
+Terms to understand
+Phonology
+Phoneme
+Allophone
+Complimentary Distribution
+Contrastive Distribution
+Phonological rule
+Natural Class
+Minimal Pair
+Assimilation
+Dissimilation
+Insertion/Epenthesis
+Deletion
+Phonotactic Constraint
+Syllable
+Onset
+Coda
+Nucleus
+Rhyme/Rime

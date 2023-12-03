@@ -74,3 +74,39 @@ Conclusion
 English is unique with its complexities and irregularities.
 All languages have their unique challenges and eccentricities.
 Acknowledgment of the difficulties faced by second language learners.
+
+Questions to answer
+What is a morpheme?
+What distinguishes a bound vs. free morpheme?
+How can you determine what part of speech a morpheme is?
+What’s the difference between derivational and inflectional morphology?
+What’s the difference between an isolating and a synthetic language? How can you tell which is which?
+What’s the difference between a content/lexical word and a function/grammatical word?
+Terms to understand
+Morpheme
+Bound Morpheme
+Free Morpheme
+Affix
+Prefix
+Suffix
+Infix
+Open Class
+Closed Class
+Content word
+Function word
+‘Parts of speech’ or Lexical Categories
+Noun
+Verb
+Adjective
+Adverb
+Preposition, Postposition
+Pronoun
+Conjunction
+Determiner
+Compound word
+Blend word
+Borrowed word
+Clipped Word
+Acronym/Initialism
+Inflectional vs. Derivational Morphology
+Isolating vs. Synthetic morphology

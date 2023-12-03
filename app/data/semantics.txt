@@ -91,3 +91,38 @@ Practical Relevance: Emphasizing how pragmatics play a crucial role in everyday 
 Concluding Remarks
 Emphasizing the complexity and richness of language meaning, both in individual word usage and conversational contexts.
 A teaser for further exploration of pragmatics in the next lecture, focusing on meaning in specific contexts.
+
+Questions to answer
+What is semantic entailment?
+How can it be tested?
+How is it different from pragmatic implicature?
+What is the difference between the three types of ambiguity we discussed in class?
+What does it mean to discuss a word’s ‘sense’?
+What’s the difference between a word’s connotation and denotation?
+What’s a semantic prototype, and how does it explain, for instance, the intuition that an ostrich isn’t a particularly normal ‘bird’.
+What is the nature of an ‘argument’ in Lexical semantics?
+Give an example of metonymy
+Give an example of polysemy
+What’s the difference between homonymy and homophony? Give an example of a word pair representing each.
+Terms to understand
+“True” and “False” in a syntactic sense
+Tautology
+Contradiction
+Meaningless sentences
+Non-Statements
+Entailment
+Ambiguity
+Lexical vs. Syntactic/Structural vs. Semantic
+Connotaton vs Denotation
+Semantic Prototype
+Relations among words
+Synonym/Antonym
+Hyponym/Hypernym
+Homonymy
+Homophony
+Metonymy
+Polysemy
+Word sense
+Lexical Semantics
+Arguments
+‘Frame’ for a verb or action
