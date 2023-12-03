@@ -10,10 +10,38 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const [activeCircle, setActiveCircle] = useState(null);
   const [modalContent, setModalContent] = useState(null);
+  const [userInput, setUserInput] = useState('');
+  const [apiCallCount, setApiCallCount] = useState(0);
+  const [userName, setUserName] = useState('');
+  const [isNameEntered, setIsNameEntered] = useState(false);
 
   const topics = [
     'Introduction to Language', 'Phonetics', 'Phonology', 'Morphology', 'Syntax', 'Semantics', 'Pragmatics', 'Language Families'
   ];
+
+  const handleNameSubmit = () => {
+    if (userName) {
+      setIsNameEntered(true);
+    } else {
+      alert("Please enter your name.");
+    }
+  };
+
+  if (!isNameEntered) {
+    return (
+      <div className="welcome-container">
+        <h1>Welcome to Lingua!</h1>
+        <p>Learn about linguistics in an interactive way.</p>
+        <input
+          type="text"
+          placeholder="Enter your name"
+          value={userName}
+          onChange={(e) => setUserName(e.target.value)}
+        />
+        <button onClick={handleNameSubmit}>Get Started</button>
+      </div>
+    );
+  }
 
   const toggleTopic = (topic) => {
     setSelectedTopics(prev => 
@@ -23,6 +51,7 @@ export default function Home() {
 
   const sendRequest = async () => {
     setIsLoading(true);
+    setApiCallCount(count => count + 1);
     try {
       const response = await fetch('/api/hello', {
         method: 'POST',
@@ -31,11 +60,40 @@ export default function Home() {
         },
         body: JSON.stringify({ topics: selectedTopics }),
       });
-
+      
       if (!response.ok) {
         throw new Error(`Error: ${response.status}`);
       }
 
+      const data = await response.json();
+      setResponse(data.recommendation);
+    } catch (error) {
+      setResponse(error.message);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleUserInputChange = (event) => {
+    setUserInput(event.target.value);
+  };
+
+  const handleChatSubmit = async () => {
+    setIsLoading(true);
+    setApiCallCount(count => count + 1);
+    try {
+      // Send both the selected topic and the user's input to the backend
+      const response = await fetch('/api/hello', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ topics: selectedTopics, userInput }),
+      });
+  
+      if (!response.ok) {
+        throw new Error(`Error: ${response.status}`);
+      }
       const data = await response.json();
       setResponse(data.recommendation);
     } catch (error) {
@@ -72,7 +130,7 @@ export default function Home() {
 
   return (
     <div className="container mt-5">
-      <h1 className="mb-4">Hi [name], what would you like to learn today?</h1>
+      <h1 className="mb-4">Hi {userName}, what would you like to learn today?</h1>
       <div className="d-flex flex-wrap mb-3">
         {topics.map(topic => (
           <button
@@ -105,6 +163,18 @@ export default function Home() {
             <button className="btn btn-secondary" onClick={closeModal}>Close</button>
           </div>
         </div>
+      )}
+
+      {response && (
+      <div className="chat-box">
+        <input
+          type="text"
+          value={userInput}
+          onChange={handleUserInputChange}
+          placeholder="What do you want to practice more of?"
+        />
+        <button onClick={handleChatSubmit}>Submit</button>
+      </div>
       )}
 
       <div className={`overlay ${activeCircle !== null ? 'active' : ''}`} onClick={closeModal}></div>

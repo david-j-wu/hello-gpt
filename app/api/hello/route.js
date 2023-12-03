@@ -3,7 +3,7 @@ import path from 'path';
 
 export async function POST(request) {
   try {
-    const { topics } = await request.json();
+    const { topics, userInput, apiCallCount } = await request.json();
     const dataDir = path.join(process.cwd(), 'app', 'data');
     
     // Read all selected topic files
@@ -19,15 +19,27 @@ export async function POST(request) {
       })
     );
 
-    const combinedContents = topicContents.join('\n\n');
-    const promptText = `Do the following four steps:
-    Step 1) Write me a summary of the following content
-    Step 2) Create vocabulary-matching activity with four words and their definitions
-    Step 3) Create a review quiz with four questions, starting with "Here is a review quiz of the content"
-    Step 4) Provide a brief answer key to the vocabulary and review quiz. Don't give any notes
-    Segment each step with the word "StepMarker", and use the following content as reference:
+    let promptText;
+
+    if (apiCallCount === 1) {
+      promptText = `Do the following four steps:
+      Step 1) Write me a summary of the following content
+      Step 2) Create vocabulary-matching activity with four words and a bank of their definitions
+      Step 3) Create a review quiz with four questions, starting with "Here is a review quiz of the content"
+      Step 4) Provide a brief answer key to the vocabulary and review quiz. Don't give any notes
+
+      Segment each step with the word "StepMarker", and use the following content as reference:
+      \n\n${combinedContents}`;
+    } else {
+      promptText = `Do the following four steps:
+      Step 1) Write me a summary of the following content
+      Step 2) Create vocabulary-matching activity with four words and a bank of their definitions
+      Step 3) Create a review quiz with four questions, starting with "Here is a review quiz of the content"
+      Step 4) Provide a brief answer key to the vocabulary and review quiz. Don't give any notes
     
-    \n\n${combinedContents}`;
+      Segment each step with the word "StepMarker", and tailor the content to focus on "${userInput}" within
+      the subject of ${topics}`;
+    }
 
     // OpenAI API request setup
     const createChatCompletionEndpointURL = "https://api.openai.com/v1/chat/completions";

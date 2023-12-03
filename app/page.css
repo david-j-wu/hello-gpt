@@ -90,3 +90,63 @@
 .modal-content p {
   font-size: 1em;
 }
+
+.chat-box {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f5f5f5; /* Light grey background */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex;
+  justify-content: space-between; /* Space out input and button */
+  align-items: center;
+}
+
+.chat-box input {
+  flex-grow: 1; /* Input takes up most of the space */
+  margin-right: 10px; /* Spacing between input and button */
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px; /* Larger font for readability */
+}
+
+.chat-box button {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.chat-box button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.welcome-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.welcome-container h1 {
+  margin-bottom: 20px;
+}
+
+.welcome-container input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.welcome-container button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
