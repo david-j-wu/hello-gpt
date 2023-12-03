@@ -23,7 +23,9 @@ npm install
 ```
 
 3. Install Bootstrap
-``` npm install bootstrap ```
+```
+npm install bootstrap
+```
 
 4. Create a copy of the sample environment variables files, `.env.sample`, either manually or by running the following command:
 
