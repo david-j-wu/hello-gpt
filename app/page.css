@@ -150,3 +150,61 @@
   border: none;
   cursor: pointer;
 }
+
+/* Styles for question buttons */
+.btn-outline-primary {
+  border-color: #007bff;
+  color: #007bff;
+  margin: 5px;
+}
+
+/* Styles for answer buttons */
+.btn-outline-success {
+  border-color: #28a745;
+  color: #28a745;
+  margin: 5px;
+}
+
+/* Styles for the 'Show/Hide Answer Key' button */
+.btn-info {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  color: white;
+  margin-top: 10px;
+}
+
+/* Hidden by default */
+.answer-key {
+  display: none;
+  margin-top: 10px;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Visible when active */
+.answer-key.active {
+  display: block;
+}
+
+.modal-content {
+  position: relative;
+}
+
+.modal-header {
+  border-bottom: 1px solid #e9ecef;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-footer {
+  border-top: 1px solid #e9ecef;
+  padding: 10px;
+}

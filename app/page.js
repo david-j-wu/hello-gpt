@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import * as bootstrap from 'bootstrap';
 import './page.css';
 
 export default function Home() {
@@ -120,11 +121,42 @@ export default function Home() {
   };
 
   const handleCircleClick = (topicContent, index) => {
-    setModalContent({ index, content: topicContent });
+    // Process the content into a quiz format
+    const quizContent = formatQuizContent(topicContent);
+    setModalContent({ index, content: quizContent });
     setActiveCircle(index); // Set the index of the clicked circle as active
   };
 
+  // Helper function to format the quiz content
+  const formatQuizContent = (content) => {
+    // Here, you'd parse the content and structure it into quiz format.
+    // The example below assumes you have a specific format for the content.
+    const sections = content.split('\n').filter(line => line.trim() !== '');
+    const words = sections.slice(0, 4); // Assuming the first 4 lines are words
+    const definitions = sections.slice(4); // Assuming the rest are definitions
+
+    // Create quiz elements
+    const wordButtons = words.map((word, index) => (
+      <button key={index} className="btn btn-info m-2">{word}</button>
+    ));
+
+    const definitionList = definitions.map((definition, index) => (
+      <li key={index} className="list-group-item">{definition}</li>
+    ));
+
+    return { wordButtons, definitionList };
+  };
+
   const closeModal = () => {
+    // Manually hide the modal using the Bootstrap Modal instance
+    const modalElement = document.getElementById(`modal-${activeCircle}`);
+    if (modalElement) {
+      const modalInstance = bootstrap.Modal.getInstance(modalElement); // Get the Bootstrap modal instance
+      if (modalInstance) {
+        modalInstance.hide(); // Hide the modal
+      }
+    }
+  
     setActiveCircle(null);
     setModalContent(null);
   };
@@ -157,11 +189,27 @@ export default function Home() {
       )}
 
       {modalContent && (
-        <div className={`modal-container ${activeCircle !== null ? 'active' : ''}`}>
-          <div className="modal-content">
-            <h5>Topic {modalContent.index + 1}</h5>
-            <p>{modalContent.content}</p>
-            <button className="btn btn-secondary" onClick={closeModal}>Close</button>
+        <div className={`modal fade ${activeCircle !== null ? 'show d-block' : ''}`} tabIndex="-1">
+          <div className="modal-dialog modal-dialog-centered">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title">Topic {modalContent.index + 1}</h5>
+                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div className="modal-body">
+                {/* Display word buttons */}
+                <div className="d-flex flex-wrap justify-content-center">
+                  {modalContent.content.wordButtons}
+                </div>
+                {/* Display definitions */}
+                <ul className="list-group list-group-flush">
+                  {modalContent.content.definitionList}
+                </ul>
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
           </div>
         </div>
       )}
