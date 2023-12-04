@@ -26,7 +26,7 @@ export async function POST(request) {
       promptText = `Do the following four steps:
       Step 1) Write me a summary of the following content
       Step 2) Create vocabulary-matching activity with four words and a bank of their definitions
-      Step 3) Create a review quiz with four questions, starting with "Here is a review quiz of the content"
+      Step 3) Create a review quiz with four questions, starting with "Here is a review quiz of the content" Make it multiple choice for each question and start each possible answer with a), b), c), or d)
       Step 4) Provide a brief answer key to the vocabulary and review quiz. Don't give any notes
 
       Segment each step with the word "StepMarker", and use the following content as reference:

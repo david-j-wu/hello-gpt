@@ -136,27 +136,18 @@ export default function Home() {
     const definitions = sections.slice(4); // Assuming the rest are definitions
 
     // Create quiz elements
-    const wordButtons = words.map((word, index) => (
-      <button key={index} className="btn btn-info m-2">{word}</button>
-    ));
+    // const wordButtons = words.map((word, index) => (
+    //   <button key={index} className="btn btn-info m-2">{word}</button>
+    // ));
 
     const definitionList = definitions.map((definition, index) => (
       <li key={index} className="list-group-item">{definition}</li>
     ));
 
-    return { wordButtons, definitionList };
+    return {definitionList };
   };
 
   const closeModal = () => {
-    // Manually hide the modal using the Bootstrap Modal instance
-    const modalElement = document.getElementById(`modal-${activeCircle}`);
-    if (modalElement) {
-      const modalInstance = bootstrap.Modal.getInstance(modalElement); // Get the Bootstrap modal instance
-      if (modalInstance) {
-        modalInstance.hide(); // Hide the modal
-      }
-    }
-  
     setActiveCircle(null);
     setModalContent(null);
   };
@@ -189,14 +180,19 @@ export default function Home() {
       )}
 
       {modalContent && (
-        <div className={`modal fade ${activeCircle !== null ? 'show d-block' : ''}`} tabIndex="-1">
-          <div className="modal-dialog modal-dialog-centered">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h5 className="modal-title">Topic {modalContent.index + 1}</h5>
-                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div className="modal-body">
+            <div className={`modal fade ${activeCircle !== null ? 'show d-block' : ''}`} tabIndex="-1">
+              <div className="modal-dialog modal-dialog-centered">
+                <div className="modal-content">
+                  <div className="modal-header">
+                    <h5 className="modal-title">Topic {modalContent.index + 1}</h5>
+                    <button 
+                      type="button" 
+                      className="btn-close" 
+                      aria-label="Close" 
+                      onClick={closeModal}  // Ensure this button calls closeModal
+                    ></button>
+                  </div>
+                  <div className="modal-body">
                 {/* Display word buttons */}
                 <div className="d-flex flex-wrap justify-content-center">
                   {modalContent.content.wordButtons}
@@ -205,13 +201,17 @@ export default function Home() {
                 <ul className="list-group list-group-flush">
                   {modalContent.content.definitionList}
                 </ul>
-              </div>
-              <div className="modal-footer">
-                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
+                </div>
+            <div className="modal-footer">
+              <button 
+                type="button" 
+                className="btn btn-secondary" 
+                onClick={closeModal}  // Ensure this button also calls closeModal
+              >Close</button>
             </div>
           </div>
         </div>
+      </div>
       )}
 
       {response && (
